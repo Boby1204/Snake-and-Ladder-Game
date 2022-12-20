@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snake_ladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitHeight="500" fitWidth="500" layoutX="300"  >
+            <image>
+                <Image url="@board.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player2" fitHeight="50" fitWidth="20" layoutY="450"  layoutX="283">
+            <image>
+                <Image url="@red.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player1" fitHeight="50" fitWidth="20" layoutY="450" layoutX="260" >
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="100" fitWidth="100" layoutY="150" layoutX="100" onMouseClicked="#roll" >
+            <image>
+                <Image url="@start.jpeg"/>
+            </image>
+        </ImageView>
+        <Text fx:id="changeTurn" layoutY="138" layoutX="100" text="Player 1's turn to play....."></Text>
+        <Text fx:id="number" layoutY="265" layoutX="150"></Text>
+
+        <ImageView fitHeight="70" fitWidth="35" layoutY="380"  layoutX="50">
+            <image>
+                <Image url="@red.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="70" fitWidth="35" layoutY="295" layoutX="50" >
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+        <Text layoutX="100" layoutY="340" text="Player 1"></Text>
+        <Text layoutX="100" layoutY="420" text="Player 2"></Text>
+    </children>
+</AnchorPane>
